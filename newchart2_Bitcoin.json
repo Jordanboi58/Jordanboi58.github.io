@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "BitCoin Price",
+
+   "title": {
+    "text": "Bitcoin: trading range",
+    "subtitle":"High-low range, 8h time periods. Source: coinapi.io",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start"},
+  
+   
+  "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/data_ohlcv_BTC.json",
+      "format": {"type": "json"}},
+  
+
+  "height": 300,
+  "width": 300,
+  
+
+  "mark": {
+    "type": "area",
+    "point": false,
+    "color":"#f4c245"
+  },
+
+  
+  "encoding": {
+    
+    "x": {
+      "field": "time_period_start",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10}},
+
+    "y": {
+      "field": "price_low",
+      "type": "quantitative",
+      "title": "",
+      "scale":{"domain":[30000, 60000]},
+      "axis": {
+        "grid": false,
+        "format":"$.2s"}},
+
+    "y2": {"field": "price_high"}       
+  }
+}
