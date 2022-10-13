@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,35 +19,33 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
 
-
-
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
-        <h1>IMF Lending Chart with analyses.</h1>
-        
-        <h3>IMF lending chart</h3>
+    <div class="myWeek2">
+        <h1>IMF Lending Chart with Analysis</h1>
+        <h3>IMF lending Chart</h3>
         <p>This Chart looks at IMF lending</p>
-        <div class="chart" id="Chart3">
-            <script>
-                var myChart3 = "IMF_lending_chart.code.json";
-                vegaEmbed('#Chart3', myChart3);
-            </script>
-<h3>IMF Lending chart as % of world GDP</h3>
-<p>IMF lending Chart with additional analyses </p>
-<div class="chart" id="Chart4">
-        <script>
-            var myChart4 = "IMF lending chart edited %.json";
-            vegaEmbed('#Chart4', myChart4);
-        </script>
-<p style="font-size: 20px; color:#1F9AFE;">
+        <div class="myWeek2" id="Chart3">
+        <h3>Lending chart as % of world GDP</h3>
+        <p>IMF lending Chart with Additional Analysis</p>
+        <div class="myweek2" id="Chart4">
+    </div>
+
+
+
+<script>
+    var myChart3 = "IMF_lending_chart.code.json";
+    var myChart4 = "IMF lending chart edited %.json";
     
-    </p>
-</div>
-<a href="index.html">Click here for second page</a>       
+    
+    vegaEmbed('#Chart3', myChart3, {"actions": false});
+    vegaEmbed('#Chart4', myChart4, {"actions": false});
+</script>
+<p> style="font-size: 20px; color:#1F9AFE;"</p>
+<a href="index.html">Click here for second page</a> 
 </body>
 
-
 </html>
+
 
 
