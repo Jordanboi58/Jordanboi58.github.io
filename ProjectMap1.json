@@ -24,7 +24,7 @@
         "key": "Region",
         "fields": ["Offences_per_100,000_population", "Share_of_industry_as_financial_insurance", "Share_of_industry_as_scientific_technical"],
         "data": {
-          "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Project.map.data.json"
+          "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Map.Projectdata"
         }
       }
     }
