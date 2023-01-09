@@ -1,0 +1,150 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOCpwWvjjD8yHEi3Ga/qMJV",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Jordanboi58/Jordanboi58.github.io/blob/main/python%20coding%20for%20manual%20data%20imbed\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "npCNJpjeozSE",
+        "outputId": "b2b7fa86-8971-4d70-d3e7-d52a762d4b9e"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Arrays, Vectors, Lists'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
+      "source": [
+        "\"Arrays, Vectors, Lists\"\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "test navigation, Ctrl+Enter runs cell, Alt+Enter runs and adds new one below\n"
+      ],
+      "metadata": {
+        "id": "Dc1aBWe6puyp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "T_levYNYQPDR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "\n",
+        "df = pd.read_csv(\"daily_yields.data.week3.csv\")\n",
+        "df.T.to_dict()\n",
+        "\n",
+        "list( df.T.to_dict().values() )\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "VNJJb3bEsXgn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "rKa5RqmlTYch"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b={'alfa':1,\n",
+        "   'beta':27,\n",
+        "   'gamma':[0,1,2],\n",
+        "   'delta':'67.3',\n",
+        "   'ninety-eight':{\n",
+        "       'a':5,\n",
+        "       'b':7,}\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "WI4TJ0W7SE-a"
+      },
+      "execution_count": 53,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b.keys(),b.values()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FgvQH4zaTNAp",
+        "outputId": "4a0760d7-e330-488f-eee9-42fad7623138"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(dict_keys(['alfa', 'beta', 'gamma', 'delta', 'ninety-eight']),\n",
+              " dict_values([1, 27, [0, 1, 2], '67.3', {'a': 5, 'b': 7}]))"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 54
+        }
+      ]
+    }
+  ]
+}
