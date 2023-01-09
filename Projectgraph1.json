@@ -1,15 +1,15 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "title": {
-      "text": "Estimated severity of Organised crime on 16-18 Education outcomes",
-      "subtitle":["The Data is grouped by Region area in the UK", ""],
+      "text": "Estimated severity of Organised crime on 16-18 Education",
+      "subtitle":["The Data is grouped by Police force area (approx. County specific)", ""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"
     },
   "data": {
-    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Projectgraph2.json"
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Countylevelcleanedparsed.json"
   },
       "height": 450,
       "width": 450,
@@ -20,17 +20,17 @@
         "filled": true},
 
       "encoding": {
-        "tooltip": {"field": "region_name", "type": "nominal"},
+        "tooltip": {"field": "Police_force_County_area", "type": "nominal"},
         "x": {
-          "field": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population",
+          "field": "Possible_organised_crimes_as_a_percentage_of_population",
           "type": "quantitative",
-          "scale": {"domain": [0.025, 0.075]},
+          "scale": {"domain": [0.05, 0.2]},
           "title": "Possible number of organised crimes as percentage of Pop. "
         },
         "y": {
-          "field": "Average_rate_of_atleast2_level3_qual_percentagerate",
+          "field": "pc%_achieving_atleast_two_substantial_lev3_Aloocated_forcearea",
           "type": "quantitative",
-          "scale": {"domain": [0.82, 0.9]},
+          "scale": {"domain": [0.91, 0.99]},
           "title": "Percentage of students achieving 2+ A-levels Equivilent"
         }
       }
@@ -42,17 +42,17 @@
       },
       "transform": [
         {
-          "regression": "Average_rate_of_atleast2_level3_qual_percentagerate",
-          "on": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population"
+          "regression": "pc%_achieving_atleast_two_substantial_lev3_Aloocated_forcearea",
+          "on": "Possible_organised_crimes_as_a_percentage_of_population"
         }
       ],
       "encoding": {
         "x": {
-          "field": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population",
+          "field": "Possible_organised_crimes_as_a_percentage_of_population",
           "type": "quantitative"
         },
         "y": {
-          "field": "Average_rate_of_atleast2_level3_qual_percentagerate",
+          "field": "pc%_achieving_atleast_two_substantial_lev3_Aloocated_forcearea",
           "type": "quantitative"
         }
       }
@@ -60,8 +60,8 @@
     {
       "transform": [
         {
-          "regression": "Average_rate_of_atleast2_level3_qual_percentagerate",
-          "on": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population",
+          "regression": "pc%_achieving_atleast_two_substantial_lev3_Aloocated_forcearea",
+          "on": "Possible_organised_crimes_as_a_percentage_of_population",
           "params": true
         },
         {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}

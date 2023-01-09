@@ -1,0 +1,76 @@
+
+body {
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    color: black;
+    margin: auto;
+    text-align: center;
+    background-image: url("business.jpg");
+    background-color: #cccccc;
+
+}
+.container {
+    background: #7aaec4;
+    
+
+}
+
+.breadcrumb a {
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.chart {
+    background-color: white;
+    width:750px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+
+    
+
+}
+
+
+p {
+    text-align: center;
+    color: black;  
+    background-color: #7aaec4;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: grey;
+    size: ;
+    
+    
+}
+.chart#Chart6 {
+    overflow: scroll;
+}
+* {
+
+    text-align: center;
+    
+    }
+
+
+
+      @media screen and (max-width: 960px) {
+        .container {
+          display: flex;
+          justify-content: space-between;
+          height: 80px;
+          z-index: 1;
+          width: 100%;
+          max-width: 1300px;
+          padding: 1rem;
+        }
+body {
+ background-image: url("business.jpg");
+ background-color: #cccccc;
+}
+
+h3 {
+    color: blue;
+}
