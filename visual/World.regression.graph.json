@@ -1,0 +1,81 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Estimated impact of Organised Crime on Education Quality",
+      "subtitle":["The Data is grouped by Country", "n= 184"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/World.regressiondata.json"
+  },
+
+    "height": 450,
+    "width": 450,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "tooltip": {"field": "Country", "type": "nominal"},
+        "x": {
+          "field": "Criminality_index",
+          "scale": {"domain": [1, 9]},
+          "type": "quantitative",
+          "title": "Criminality Index (Range: 0-10)"
+        },
+        "y": {
+          "field": "Education_Index",
+          "type": "quantitative",
+          "title": "Education Index (Range: 0-1)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Education_Index",
+          "on": "Criminality_index"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Criminality_index",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Education_Index",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Education_Index",
+          "on": "Criminality_index",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
+    }
+  ]
+}

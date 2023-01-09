@@ -1,0 +1,81 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Estimated severity of Organised crime on 16-18 Education outcomes",
+      "subtitle":["The Data is grouped by Region area in the UK", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jordanboi58/Jordanboi58.github.io/main/Projectgraph2.json"
+  },
+      "height": 450,
+      "width": 450,
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true},
+
+      "encoding": {
+        "tooltip": {"field": "region_name", "type": "nominal"},
+        "x": {
+          "field": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population",
+          "type": "quantitative",
+          "scale": {"domain": [0.025, 0.075]},
+          "title": "Possible number of organised crimes as percentage of Pop. "
+        },
+        "y": {
+          "field": "Average_rate_of_atleast2_level3_qual_percentagerate",
+          "type": "quantitative",
+          "scale": {"domain": [0.82, 0.9]},
+          "title": "Percentage of students achieving 2+ A-levels Equivilent"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Average_rate_of_atleast2_level3_qual_percentagerate",
+          "on": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Average_rate_of_atleast2_level3_qual_percentagerate",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Average_rate_of_atleast2_level3_qual_percentagerate",
+          "on": "Potential_number_of_orgaised_crimes_as_percentage_of_region_population",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
+    }
+  ]
+}

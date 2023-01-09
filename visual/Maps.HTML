@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="indexmain.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <div class="container">
+        <h2>Data science for Economics</h2>
+        <h4>Jordan Hemani</h4>                       
+        <ul class="breadcrumb">
+            <li><a href="Website.Structure.html">Home</a></li>   
+            <li><a href="Project.HTML">Portfolio</a></li>
+            <li class="active">Project</li>
+            <li><a href="Githubpart">GitHub</a></li>
+        </ul>
+      </div>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Link to my style sheet -->
+<link rel="stylesheet" href="index2.css">
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+
+
+<body>
+    <ul class="nav nav-tabs">
+        <li><a href="Intro.HTML">Introduction</a></li>
+        <li class="active"><a href="Maps.HTML">Maps</a></li>
+        <li><a href="Regression.HTML">Regressions</a></li>
+        <li><a href="Project.Chart.HTML">Charts</a></li>
+           
+    </ul>
+
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+        <h3> Graphical Statistics </h3>
+        <p> The below graph measures the number of offences with a weapon per 100k people, additonaly the proportion of jobs per region considered "specialised" is measured. </p>
+        <p> "Specialised" : Finanical, Insurance, Technical, and Scientific industries.</p>
+        
+        
+        <div class="chart" id="Chart23">
+            <script>
+                var myChart23 = "ProjectMap1.json";
+                vegaEmbed('#Chart23', myChart23);
+            </script>
+        
+        </div>
+        <p> Google Collab Link: </p><a href="https://colab.research.google.com/drive/1nsDJy5cSMyCHMDhh3wD7r9uUf_VjRZvu#scrollTo=HVWftl7RTgV1">https://colab.research.google.com/UKmap </a>
+       
+        
+</body>
