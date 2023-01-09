@@ -1,0 +1,184 @@
+﻿Country,Criminality_index,Education_Index
+Afghanistan,7.08,0.414
+Albania,5.63,0.746
+Algeria,4.51,0.672
+Andorra,2.96,0.72
+Angola,5.29,0.5
+Antigua and Barbuda,3.34,0.665
+Argentina,4.38,0.855
+Armenia,3.26,0.74
+Australia,4.00,0.924
+Austria,4.04,0.865
+Azerbaijan,5.08,0.711
+Bahamas,3.79,0.74
+Bahrain,4.83,0.769
+Bangladesh,4.98,0.529
+Barbados,3.21,0.782
+Belarus,5.08,0.838
+Belgium,4.34,0.902
+Belize,4.64,0.695
+Benin,5.25,0.478
+Bhutan,3.69,0.496
+Bolivia,4.30,0.695
+Bosnia and Herzegovina,5.89,0.711
+Botswana,3.71,0.676
+Brazil,6.50,0.694
+Brunei Darussalam,2.76,0.702
+Bulgaria,5.43,0.779
+Burkina Faso,5.49,0.312
+Burundi,4.51,0.417
+Cabo Verde,4.04,0.562
+Cambodia,5.83,0.484
+Cameroon,6.31,0.547
+Canada,3.66,0.894
+Central African Republic,7.04,0.353
+Chad,5.86,0.288
+Chile,4.60,0.81
+China,6.01,0.66
+Colombia,7.66,0.682
+Comoros,3.86,0.482
+Congo (Democratic Republic of the),7.75,0.496
+Congo,5.03,0.543
+Costa Rica,4.99,0.726
+Côte d'Ivoire,6.15,0.453
+Croatia,5.06,0.805
+Cuba,3.44,0.79
+Cyprus,4.19,0.827
+Czech Republic,4.63,0.89
+Denmark,3.86,0.92
+Djibouti,3.99,0.325
+Dominica,2.63,0.632
+Dominican Republic,5.15,0.666
+Ecuador,6.25,0.702
+Egypt,5.16,0.618
+El Salvador,5.94,0.555
+Equatorial Guinea,4.11,0.467
+Eritrea,4.34,0.269
+Estonia,3.60,0.882
+Eswatini,3.63,0.557
+Ethiopia,4.79,0.341
+Fiji,3.90,0.764
+Finland,2.71,0.927
+France,5.66,0.817
+Gabon,4.90,0.65
+Gambia,4.83,0.406
+Georgia,2.96,0.862
+Germany,4.90,0.943
+Ghana,6.01,0.563
+Greece,4.93,0.849
+Grenada,3.05,0.77
+Guatemala,6.48,0.519
+Guinea,5.20,0.354
+Guinea-Bissau,5.45,0.414
+Guyana,5.10,0.601
+Haiti,5.73,0.456
+Honduras,6.98,0.499
+Hungary,4.50,0.821
+Iceland,3.39,0.926
+India,5.53,0.555
+Indonesia,6.38,0.65
+Iran,7.10,0.756
+Iraq,7.05,0.557
+Ireland,4.90,0.922
+Israel,4.41,0.883
+Italy,5.81,0.793
+Jamaica,5.91,0.689
+Japan,4.53,0.851
+Jordan,4.71,0.667
+Kazakhstan,4.26,0.84
+Kenya,6.95,0.534
+Kiribati,2.35,0.594
+Kuwait,5.14,0.638
+Kyrgyzstan,5.33,0.73
+Lao People's Democratic Republic,5.51,0.481
+Latvia,3.51,0.883
+Lebanon,6.76,0.604
+Lesotho,3.90,0.532
+Liberia,5.05,0.426
+Libya,6.55,0.61
+Liechtenstein,1.88,0.832
+Lithuania,3.31,0.898
+Luxembourg,2.36,0.806
+Madagascar,5.59,0.486
+Malawi,3.83,0.47
+Malaysia,5.94,0.726
+Maldives,4.06,0.573
+Mali,5.89,0.286
+Malta,4.65,0.825
+Marshall Islands,2.31,0.707
+Mauritania,4.38,0.396
+Mauritius,4.51,0.736
+Mexico,7.56,0.703
+Micronesia (Federated States of),3.30,0.581
+Moldova,4.45,0.711
+Mongolia,4.01,0.736
+Montenegro,6.00,0.803
+Morocco,4.79,0.569
+Mozambique,6.53,0.395
+Myanmar,7.59,0.464
+Namibia,4.33,0.584
+Nepal,6.16,0.521
+Netherlands,4.69,0.914
+New Zealand,3.25,0.926
+Nicaragua,6.06,0.573
+Niger,6.01,0.249
+Nigeria,7.15,0.499
+North Macedonia,5.31,0.704
+Norway,3.81,0.93
+Oman,4.14,0.718
+Pakistan,6.28,0.402
+Palau,2.94,0.855
+Panama,6.68,0.7
+Papua New Guinea,5.44,0.439
+Paraguay,6.70,0.638
+Peru,6.35,0.74
+Philippines,6.84,0.678
+Poland,4.01,0.869
+Portugal,4.55,0.768
+Qatar,5.21,0.659
+Romania,4.59,0.765
+Russia,6.24,0.823
+Rwanda,3.68,0.458
+Samoa,2.04,0.713
+São Tomé and Príncipe,1.78,0.567
+Saudi Arabia,6.01,0.789
+Senegal,4.81,0.345
+Serbia,6.21,0.783
+Seychelles,3.68,0.726
+Sierra Leone,5.40,0.406
+Singapore,3.13,0.924
+Slovakia,4.69,0.826
+Slovenia,4.29,0.91
+Solomon Islands,4.15,0.474
+South Africa,6.63,0.724
+South Sudan,6.34,0.307
+Spain,5.78,0.831
+Sri Lanka,4.64,0.746
+St. Kitts and Nevis,4.10,0.673
+Saint Lucia,4.09,0.672
+St. Vincent and the Grenadines,3.30,0.684
+Sudan,6.46,0.345
+Suriname,4.90,0.675
+Sweden,4.56,0.918
+Tanzania,6.15,0.429
+Thailand,5.76,0.682
+Timor-Leste,3.96,0.51
+Togo,5.33,0.517
+Tonga,3.78,0.775
+Trinidad and Tobago,4.94,0.728
+Tunisia,3.79,0.661
+Turkey,6.89,0.731
+Turkmenistan,4.61,0.653
+Uganda,6.14,0.523
+Ukraine,6.18,0.799
+United Arab Emirates,5.75,0.802
+United Kingdom,4.89,0.928
+United States,5.50,0.9
+Uruguay,2.69,0.765
+Uzbekistan,4.96,0.729
+Vanuatu,2.20,0.561
+Venezuela,6.64,0.7
+Vietnam,6.28,0.63
+Yemen,6.13,0.35
+Zambia,4.93,0.557
+Zimbabwe,5.66,0.587
